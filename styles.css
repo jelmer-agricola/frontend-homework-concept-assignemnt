@@ -1,7 +1,7 @@
 /*////////////////////////
     Table of Contents
     1. Global Styles
-    2. Typography
+   2. Typography
     3. Layout
         3.1 Reusables
         3.2 Other
@@ -12,20 +12,155 @@
     5. Media Queries
 ////////////////////////*/
 
+/* //
+Altijd wat ruimte padding op inner container doen --> text valt er dan niet vanaf
+voor ieder blok nieuwe inner container
+ */
+
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 /* ------------------------------- 2. Typography ----------------------------------- */
+body {
+    font-family: Roboto, serif;
+    color: #0C0C0C;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Merriweather, serif;
+}
+
+/* Paars #5722CD;
+Blauw #4845E4;
+Roze #ED4385;
+Zwart #0C0C0C (voor standaard tekst);
+Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:
+Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)
+Grijs #7A7A7A (voor de service-tegel tekst);
 
 /* ------------------------------- 3. Layout --------------------------------------- */
 
 /* --------------- 3.1 Reusables ----------------------- */
+.outer-content-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
-/* --------------- 3.2 Other --------------------------- */
+
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-grow: 0;
+    margin: 0 20px;
+    align-items: center;
+}
+
+
+/* --------------- 3.2 Other Reusables  --------------------------- */
+a:link {
+    text-decoration: none;
+    color: white;
+
+}
+
+button {
+    background-color: #ED4385;
+    color: white;
+    padding: 25px 40px;
+    margin: 4px 2px;
+    border-radius: 50px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14 px;
+    font-weight: 300;
+
+}
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+#header {
+    background-color: #4845E4;
+    color: white;
+    position: relative;
+    padding: 30px 0;
+    border: black 4px solid;
+}
 
-/* --------------- 4.2 Introduction ------------------- */
+.header-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.header-navigation ul {
+
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.header-content__navigation a {
+    color: white;
+}
+
+
+
+
+.header-work-together {
+    padding: 100px 0;
+    margin-bottom: 90px;
+    font-size: 20px;
+    text-align: center;
+
+
+}
+.header-circle-line {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 39px);
+
+}
+
+
+/* --------------- 4.2 Main ------------------- */
+.rollingStone {
+}
+
+.services h3 {
+    color: #4B49E8;
+}
+
+.services-article {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 300px;
+    border: #4B49E8 1px solid;
+    margin: 40px;
+}
+
+/* --------------- 4.3 Footer ------------------- */
+
+/*
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
