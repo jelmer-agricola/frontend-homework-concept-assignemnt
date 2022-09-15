@@ -7,56 +7,61 @@
 </head>
 <body>
 <header id="header" class="outer-content-container">
-    <div class="inner-container">
 
-        <nav class="header-navigation">
-            <ul>
-                <li><a href="#case-studies">Case Studies</a></li>
-                <li><a href="#services"> Services</a></li>
-                <li><a href="#contact">Contact us</a></li>
-            </ul>
-        </nav>
+    <nav class="header-navigation">
+        <ul>
+            <li><a href="#projects">Case Studies</a></li>
+            <li><a href="#services"> Services</a></li>
+            <li><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
+    <div class="inner-container">
         <div class="header-work-together">
             <h1>Your website is an investment in the success of your business.</h1>
-            <p>We are her to help you succeed</p>
+            <p>We are here to help you succeed</p>
 
             <button type="button"> Let's work together</button>
         </div>
     </div>
-    <img class="header-circle-line" src="./assets/Screenshots/squiggle_line_stripe.svg" alt="kringeltje">
+    <img class="header-squiggle-line" src="./assets/Screenshots/squiggle_line_stripe.svg" alt="kringeltje">
 
 </header>
 <main>
-    <section class="outer-content-container">
-        <div>
-            <h2>Rekupe is a digital agency in Los Angeles. We use strategic UX, SEO optimization and beautiful visual
-                designs to
-                help
-                your business grow. We see every project as a fresh opportunity, pushing ourselves to create new digital
+    <section id="intro" class="outer-content-container">
+        <div class="inner-container">
+            <h2>Rekupe is a digital agency in Los Angeles. </h2>
+            <h2>We use strategic UX, SEO optimization and beautiful visual
+                designs to help</h2>
+            <h2>your business grow. We see every project as a fresh opportunity, pushing ourselves to create new digital
                 experiences.</h2>
-            Have a question? Click here to contact us!
+            <p class="question-intro">Have a question? <span><a class="link-intro"
+                                                                href="#contact">Click here </a></span> to contact us!
+            </p>
         </div>
     </section>
 
-    <section class="outer-content-container">
+    <section id="projects" class="outer-content-container">
         <article class="rollingStone">
             <div>
-                <h2> Rolling Stone</h2>
+                <h3> Rolling Stone</h3>
 
                 You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global icon.
+                <span class="image-wrapper">
+    <img src="./assets/Screenshots/work-image-01.jpeg" alt="laptop-rollingstone"/>
+</span>
             </div>
-            <img src="" alt="laptop-rollingstone">
+
         </article>
 
         <article class="variety">
             <div>
-                <h2>Variety</h2>
+                <h3>Variety</h3>
                 Variety is an industry leader for breaking entertainment news, reviews and box office results with
                 archive of
                 content dating back to 1905.
 
+
             </div>
-            <img src="" alt="variety-magazine">
         </article>
 
 
@@ -65,8 +70,9 @@
                 <h2> Worth</h2>
 
                 A global media platform connecting a community that embraces worth beyond wealth.
+
+
             </div>
-            <img src="" alt="magazine-worth">
         </article>
 
 
@@ -138,7 +144,7 @@
         <h3>Let's work together</h3>
         <p>Have a question? Need a quote? Let us know! </p>
         <form action="contact">
-            <label for="name">name: </label><br>
+            <label id="contact" for="name">name: </label><br>
             <input type="Name" id="name"><br>
 
 

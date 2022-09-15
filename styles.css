@@ -19,7 +19,8 @@ voor ieder blok nieuwe inner container
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400;700&display=swap');
+
 
 * {
     margin: 0;
@@ -30,14 +31,38 @@ voor ieder blok nieuwe inner container
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 body {
-    font-family: Roboto, serif;
+    font-family: Roboto, Arial, serif;
     color: #0C0C0C;
-    font-weight: 300;
     font-size: 16px;
+    font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Merriweather, serif;
+    font-family: Merriweather, 'Arial', serif;
+}
+
+h1 {
+    font-size: 46px;
+    padding: 15px;
+
+}
+
+h2 {
+    padding: 16px
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+p {
+    margin: 12px 0;
+
+
 }
 
 /* Paars #5722CD;
@@ -67,13 +92,17 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     flex-grow: 0;
     margin: 0 20px;
     align-items: center;
+    flex-basis: 1400px;
+    max-width: 850px;
+    border: black 4px solid;
+
 }
 
 
 /* --------------- 3.2 Other Reusables  --------------------------- */
 a:link {
     text-decoration: none;
-    color: white;
+    color: #4845E4;
 
 }
 
@@ -85,8 +114,12 @@ button {
     border-radius: 50px;
     border: none;
     text-transform: uppercase;
-    font-size: 14 px;
+    font-size: 14px;
     font-weight: 300;
+    margin: 27px;
+    font-family: Roboto, Arial, serif;
+    /* Box shadow opzoeken */
+
 
 }
 
@@ -95,10 +128,16 @@ button {
 /* --------------- 4.1 Header ------------------------- */
 #header {
     background-color: #4845E4;
+    background: linear-gradient(90deg, hsl(241, 70%, 58%) 0%, hsl(248, 70%, 58%) 35%, hsl(259, 83%, 47%) 100%);
+
     color: white;
     position: relative;
     padding: 30px 0;
-    border: black 4px solid;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+
 }
 
 .header-navigation {
@@ -106,6 +145,8 @@ button {
     flex-direction: row;
     justify-content: flex-end;
     width: 100%;
+    border: black 4px solid;
+
 }
 
 .header-navigation ul {
@@ -119,22 +160,21 @@ button {
     justify-content: space-between;
 }
 
-.header-content__navigation a {
+.header-navigation a {
     color: white;
 }
-
-
 
 
 .header-work-together {
     padding: 100px 0;
     margin-bottom: 90px;
-    font-size: 20px;
+    font-size: 28px;
     text-align: center;
 
 
 }
-.header-circle-line {
+
+.header-squiggle-line {
     position: absolute;
     bottom: 0;
     left: calc(50% - 39px);
@@ -143,11 +183,49 @@ button {
 
 
 /* --------------- 4.2 Main ------------------- */
-.rollingStone {
+#intro {
+    color: #4845E4;
+    text-align: center;
+    padding: 100px;
 }
+
+
+.question-intro {
+    color: #0C0C0C;
+    margin-top: 80px;
+}
+
+.link-intro {
+    color: #4845E4;
+
+}
+
+
+#projects {
+    background-color: #F3F6F9;
+    flex-wrap: wrap;
+    border: black 4px solid;
+
+
+}
+
+.image-wrapper {
+    width: 100%;
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
+.image-wrapper {
+    flex-basis: 800px;
+    flex-grow: 0;
+    flex-shrink: 1;
+}
+
 
 .services h3 {
     color: #4B49E8;
+    align-text: center;
 }
 
 .services-article {
