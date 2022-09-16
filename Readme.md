@@ -1,8 +1,13 @@
 **TODO
+- Alle links nalopen
+- box shadow
+- 
 - header
 
 - intro
 - projects
+  - variety en elk even getal goed krijgen
+  - text op juiste plek krijgen.
 - -services
 - contacform
 - footer

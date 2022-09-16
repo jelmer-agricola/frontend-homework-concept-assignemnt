@@ -21,6 +21,23 @@ voor ieder blok nieuwe inner container
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400;700&display=swap');
 
+:root {
+    /*colors*/
+    --purple: HSL(259, 72%, 47%);
+    --blue: HSL(241, 75%, 58%);
+    --pink: HSL(337, 83%, 60%);
+    --black: HSL(0, 0%, 5%);
+    --light-purple: HSL(248, 100%, 97%);
+    --light-grey: HSL(210, 33%, 96%);
+    --grey: HSL(0, 0%, 48%);
+    --white: HSL(0, 0%, 100%);
+    /*fonts*/
+    --header-fonts: 'Merriweather', serif;
+    --body-fonts: 'Roboto', sans-serif;
+    /* slope background color angles*/
+    --background-slope: 50px;
+
+}
 
 * {
     margin: 0;
@@ -32,7 +49,7 @@ voor ieder blok nieuwe inner container
 /* ------------------------------- 2. Typography ----------------------------------- */
 body {
     font-family: Roboto, Arial, serif;
-    color: #0C0C0C;
+    color: var(--black);
     font-size: 16px;
     font-weight: 300;
 }
@@ -52,10 +69,19 @@ h2 {
 }
 
 h3 {
+    font-size: 32px;
+    padding: 14px 0;
+    margin: 24px 0;
+
 
 }
 
 h4 {
+    font-size: 20px;
+    color: var(--blue);
+    padding: 14px 0;
+
+
 
 }
 
@@ -93,22 +119,28 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     margin: 0 20px;
     align-items: center;
     flex-basis: 1400px;
-    max-width: 850px;
-    border: black 4px solid;
+    border: orange 4px solid;
 
 }
 
+.default-text-settings {
+    max-width: 850px;
+    text-align: center;
+}
+.default-padding {
+    padding: 100px 0;
+}
 
 /* --------------- 3.2 Other Reusables  --------------------------- */
 a:link {
     text-decoration: none;
-    color: #4845E4;
+    color: var(--blue);
 
 }
 
 button {
-    background-color: #ED4385;
-    color: white;
+    background-color: var(--pink);
+    color: var(--white);
     padding: 25px 40px;
     margin: 4px 2px;
     border-radius: 50px;
@@ -127,10 +159,10 @@ button {
 
 /* --------------- 4.1 Header ------------------------- */
 #header {
-    background-color: #4845E4;
+    background-color: var(--blue);
     background: linear-gradient(90deg, hsl(241, 70%, 58%) 0%, hsl(248, 70%, 58%) 35%, hsl(259, 83%, 47%) 100%);
 
-    color: white;
+    color: var(--white);
     position: relative;
     padding: 30px 0;
     flex-direction: row;
@@ -161,7 +193,7 @@ button {
 }
 
 .header-navigation a {
-    color: white;
+    color: var(--white);
 }
 
 
@@ -183,37 +215,65 @@ button {
 
 
 /* --------------- 4.2 Main ------------------- */
+
+/*4.2.1 Introduction */
 #intro {
-    color: #4845E4;
+    color: var(--blue);
     text-align: center;
     padding: 100px;
+
 }
 
 
 .question-intro {
-    color: #0C0C0C;
+    color: var(--black);
     margin-top: 80px;
 }
 
 .link-intro {
-    color: #4845E4;
+    color: var(--blue);
 
 }
 
+
+/*4.2.2 Projects  */
 
 #projects {
-    background-color: #F3F6F9;
+    background-color: var(--light-grey);
     flex-wrap: wrap;
     border: black 4px solid;
+    padding: 100px 0px;
+}
+
+.project-article {
+    background-color: var(--light-grey);
+    display: flex;
+    flex-direction: row;
+    border: red 4px solid;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 100px 0;
 
 
 }
 
-.image-wrapper {
+
+.project-info {
+    flex-basis: 400px;
+    padding: 0 50px 50px 50px;
+
+}
+
+.project-squiggle-line-two {
+    margin-top: 24px;
+}
+
+.variety {
+    flex-direction: row-reverse;
+}
+
+.project-images {
     width: 100%;
-    flex-basis: 800px;
-    flex-grow: 0;
-    flex-shrink: 1;
 }
 
 .image-wrapper {
@@ -223,19 +283,38 @@ button {
 }
 
 
-.services h3 {
-    color: #4B49E8;
-    align-text: center;
+/*4.2.3 Services  */
+
+#services > div{
+    border:blue 4px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding:100px 0;
+
 }
+
+
 
 .services-article {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-height: 300px;
-    border: #4B49E8 1px solid;
-    margin: 40px;
+    flex-direction: column;
+    border: var(--blue) 1px solid;
+    padding: 40px;
+
+    flex-basis: 384px;
+    max-height: 307.79px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    color: var(--grey);
+    font-size: 13px;
 }
+.services-image{
+    width: 80px;
+}
+/*4.2.4 Form  */
 
 /* --------------- 4.3 Footer ------------------- */
 
