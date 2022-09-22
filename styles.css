@@ -33,6 +33,7 @@ voor ieder blok nieuwe inner container
     --white: HSL(0, 0%, 100%);
     /*fonts*/
     --header-fonts: 'Merriweather', serif;
+
     --body-fonts: 'Roboto', sans-serif;
     /* slope background color angles*/
     --background-slope: 50px;
@@ -43,6 +44,7 @@ voor ieder blok nieuwe inner container
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /*border: purple 2px solid;*/
 }
 
 
@@ -81,8 +83,12 @@ h4 {
     color: var(--blue);
     padding: 14px 0;
 
+}
 
-
+h5 {
+    font-size: 46px;
+    padding: 16px 0;
+    color: var(--white);
 }
 
 p {
@@ -127,6 +133,7 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     max-width: 850px;
     text-align: center;
 }
+
 .default-padding {
     padding: 100px 0;
 }
@@ -150,10 +157,11 @@ button {
     font-weight: 300;
     margin: 27px;
     font-family: Roboto, Arial, serif;
-    /* Box shadow opzoeken */
-
-
+    box-shadow: 0 5px 8px 4px rgba(0, 0, 0, 0.15);
 }
+
+/* Box shadow opzoeken */
+
 
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
@@ -242,7 +250,7 @@ button {
     background-color: var(--light-grey);
     flex-wrap: wrap;
     border: black 4px solid;
-    padding: 100px 0px;
+    padding: 100px 0;
 }
 
 .project-article {
@@ -253,23 +261,22 @@ button {
     align-items: center;
     justify-content: space-between;
     margin: 0 0 100px 0;
+}
 
-
+.project-article:nth-of-type(even) {
+    flex-direction: row-reverse;
 }
 
 
 .project-info {
     flex-basis: 400px;
     padding: 0 50px 50px 50px;
-
+    border: palegreen 4px solid;
 }
+
 
 .project-squiggle-line-two {
     margin-top: 24px;
-}
-
-.variety {
-    flex-direction: row-reverse;
 }
 
 .project-images {
@@ -278,24 +285,27 @@ button {
 
 .image-wrapper {
     flex-basis: 800px;
-    flex-grow: 0;
-    flex-shrink: 1;
+
 }
 
 
 /*4.2.3 Services  */
 
-#services > div{
-    border:blue 4px solid;
+#services > div {
+    border: blue 4px solid;
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
-    padding:100px 0;
+    padding: 100px 0;
+
 
 }
 
+.image-wrapper__services {
+    flex-basis: 60px;
+}
 
 
 .services-article {
@@ -303,21 +313,142 @@ button {
     flex-direction: column;
     border: var(--blue) 1px solid;
     padding: 40px;
-
-    flex-basis: 384px;
-    max-height: 307.79px;
+    flex-basis: 300px;
+    aspect-ratio: 1;
     flex-grow: 0;
-    flex-shrink: 1;
+    flex-shrink: 0;
     color: var(--grey);
-    font-size: 13px;
+    font-size: 14px;
+    box-shadow: 0 5px 8px 4px rgba(0, 0, 0, 0.15);
+
 }
-.services-image{
+
+.services-article {
+    min-height: 371.83px;
+}
+
+
+.services-image {
     width: 80px;
 }
+
 /*4.2.4 Form  */
 
+#contact {
+    background-color: var(--blue);
+    background: linear-gradient(90deg, hsl(241, 70%, 58%) 0%, hsl(248, 70%, 58%) 35%, hsl(259, 83%, 47%) 100%);
+    color: white;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+    font-weight: 550;
+
+}
+
+.contact__form input::placeholder,
+.contact__form textarea::placeholder {
+    color: var(--grey);
+}
+
+.contact__form input,
+.contact__form textarea {
+    font-family: Roboto, Arial, serif;
+    font-size: 16px;
+    width: 100%;
+    border: var(--grey) 1px solid;
+    border-radius: 5px;
+    padding: 15px;
+
+}
+
+.contact__form label {
+    padding: 20px 0;
+}
+
+
+.contact__form button {
+    width: 200px;
+    align-self: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
 /* --------------- 4.3 Footer ------------------- */
+
+#footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 15px;
+}
 
 /*
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+@media screen and (max-device-width: 576px) {
+    h1, h5 {
+        font-size: 36px;
+        padding: 16px 0;
+    }
+
+    h2 {
+        font-size: 22px;
+        padding: 12px 0;
+
+    }
+    #intro{
+        padding: 0;
+    }
+
+    .header-navigation a {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .header-navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-article {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .project-article:nth-of-type(even) {
+        flex-direction: column-reverse;
+    }
+
+    .project-info {
+        padding: 0 0 50px 0;
+        flex-basis: auto
+    }
+
+    .image-wrapper {
+        flex-basis: auto;
+    }
+
+    #services > div {
+        padding: 100px 0 50px 0;
+    }
+
+    .services-article {
+        flex-basis: 75%;
+
+    }
+
+
+
+
+}
+
+/*
+ services onder elkaar
+ footer in eht midden
+ */

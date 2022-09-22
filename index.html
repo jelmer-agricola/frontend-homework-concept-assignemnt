@@ -53,6 +53,7 @@
                     <p> You know Rolling Stone. It’s the definitive voice in music, politics and culture. It’s a global
                         icon.
                     </p>
+                    <p><a href= "https://www.rollingstone.com/" target="_blank">View Project </a> </p>
                 </div>
                 <span class="image-wrapper">
                                       <img class="project-images" src="./assets/Screenshots/work-image-01.jpeg"
@@ -62,7 +63,7 @@
 
             </article>
 
-            <article class="project-article variety">
+            <article class="project-article">
                 <div class="project-info">
                     <h3>Variety</h3>
                     <img class="project-squiggle-line-two" src="./assets/Screenshots/squiggle_line.svg"
@@ -71,7 +72,7 @@
                         with
                         archive of
                         content dating back to 1905.</p>
-
+                    <p><a href= "https://variety.com/" target="_blank">View Project </a> </p>
                 </div>
                 <span class="image-wrapper">
                                       <img class="project-images" src="./assets/Screenshots/work-image-02.jpeg"
@@ -86,8 +87,8 @@
                     <h3> Worth</h3>
                     <img class="project-squiggle-line-two" src="./assets/Screenshots/squiggle_line.svg"
                          alt="kringeltje2">
-
                     <p>A global media platform connecting a community that embraces worth beyond wealth.</p>
+                    <p><a href= "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">View Project </a> </p>
 
                 </div>
 
@@ -105,7 +106,7 @@
     <section id="services" class="outer-content-container">
         <div class="inner-container default-padding">
             <article class="services-article">
-                <img class="services-image" src="./assets/Screenshots/icon_web-design.svg" alt="">
+                <div class="image-wrapper__services"><img class="services-image" src="./assets/Screenshots/icon_web-design.svg" alt=""></div>
 
                 <h4>Web Design</h4>
                 <p>Good web design is how companies stand out from their competitors. High quality web design leads to
@@ -115,7 +116,7 @@
             </article>
 
             <article class="services-article">
-                <img class="services-image" src="./assets/Screenshots/icon_web-development.svg" alt="">
+                <div class="image-wrapper__services"><img class="services-image" src="./assets/Screenshots/icon_web-development.svg" alt=""></div>
 
                 <h4>Web Development</h4>
                 <p>Modern websites need to be responsive and fully functional at all sizes. We develop all of our sites
@@ -124,7 +125,7 @@
             </article>
 
             <article class="services-article">
-                <img class="services-image" src="./assets/Screenshots/icon_ux.svg" alt="">
+                <div class="image-wrapper__services"> <img class="services-image" src="./assets/Screenshots/icon_ux.svg" alt=""></div>
 
                 <h4>User Experience</h4>
                <p> In order to build successful products you have to understand the user. We create user personas,
@@ -134,14 +135,14 @@
             </article>
 
             <article class="services-article">
-                <img class="services-image" src="./assets/Screenshots/icon_graphic-design.svg" alt="">
+                <div class="image-wrapper__services"><img class="services-image" src="./assets/Screenshots/icon_graphic-design.svg" alt=""></div>
 
                 <h4>Logo Design + Branding </h4>
                 <p>Nike, Apple, Coca-Cola, Starbucks. What do all of these brands have in common? Easily recognizable logos and brand identity. The best brands stand out from the crowd by having a clear and unique point of view. We will work with you to understand your vision and help create a unique brand identity and style guide for your company.</p>
             </article>
 
             <article class="services-article">
-                <img class="services-image" src="./assets/Screenshots/icon_seo.svg" alt="">
+                <div class="image-wrapper__services"> <img class="services-image" src="./assets/Screenshots/icon_seo.svg" alt=""></div>
 
                 <h4>SEO</h4>
                 <p>SEO Do you want your site to rank higher in search results? Google is constantly changing their
@@ -153,7 +154,7 @@
             </article>
 
             <article class="services-article">
-                <img class="services-image" src="./assets/Screenshots/icon_copywriting.svg" alt="">
+                <div class="image-wrapper__services"> <img class="services-image" src="./assets/Screenshots/icon_copywriting.svg" alt=""></div>
 
                 <h4>Copy Writing</h4>
                 <p>Brand messaging needs to be clear, direct and easy to understand to be effective. A unique tone of
@@ -166,30 +167,30 @@
     </section>
 
 
-</main>
-<section class="outer-content-container">
-    <div>
+<section id="contact" class="outer-content-container">
+    <div class="inner-container default-text-settings default-padding">
         <h5>Let's work together</h5>
         <p>Have a question? Need a quote? Let us know! </p>
-        <form action="contact">
-            <label id="contact" for="name">name: </label><br>
-            <input type="Name" id="name"><br>
+        <form class="contact__form">
+            <label for="name">Name:
+            <input type="Name" id="name" placeholder="Name"></label>
 
 
-            <label for="email">email: </label><br>
-            <input type="Email" id="email"><br>
+            <label for="email">Email:
+            <input type="Email" id="email" placeholder="Email"><br></label>
 
-            <label for="message">message: </label><br>
-            <input type="Message" id="message"><br>
-
+            <label for="message">Message:
+                <textarea type="Message" id="message" cols="30" rows="10" placeholder="Message"></textarea></label>
+            <button type="submit">Send</button>
         </form>
-        <button type="button"> Send</button>
+
     </div>
 </section>
+</main>
 
-<footer class="outer-content-container">
+<footer id= "footer" class="outer-content-container">
     <div>
-        Business website opdracht Ⓒ
+        Business website opdracht Ⓒ Novi Hogeschool 2022
     </div>
 
 </footer>
