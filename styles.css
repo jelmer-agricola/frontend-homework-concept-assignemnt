@@ -36,7 +36,7 @@ voor ieder blok nieuwe inner container
 
     --body-fonts: 'Roboto', sans-serif;
     /* slope background color angles*/
-    --background-slope: 50px;
+    /*--background-slope: 50px;*/
 
 }
 
@@ -113,9 +113,10 @@ Grijs #7A7A7A (voor de service-tegel tekst);
     display: flex;
     flex-direction: row;
     justify-content: center;
-
-
+    position: relative;
 }
+
+
 
 .inner-container {
     display: flex;
@@ -166,16 +167,18 @@ button {
 /* ------------------------------- 4. Areas ---------------------------------------- */
 
 /* --------------- 4.1 Header ------------------------- */
+
 #header {
     background-color: var(--blue);
     background: linear-gradient(90deg, hsl(241, 70%, 58%) 0%, hsl(248, 70%, 58%) 35%, hsl(259, 83%, 47%) 100%);
 
     color: var(--white);
     position: relative;
-    padding: 30px 0;
+    padding: 30px 0 0 0 ;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
+
 
 
 }
@@ -186,6 +189,7 @@ button {
     justify-content: flex-end;
     width: 100%;
     border: black 4px solid;
+
 
 }
 
@@ -212,12 +216,14 @@ button {
     text-align: center;
 
 
+
 }
 
 .header-squiggle-line {
     position: absolute;
     bottom: 0;
     left: calc(50% - 39px);
+
 
 }
 
@@ -272,6 +278,8 @@ button {
     flex-basis: 400px;
     padding: 0 50px 50px 50px;
     border: palegreen 4px solid;
+    flex-shrink: 0;
+    flex-grow: 0;
 }
 
 
@@ -440,6 +448,9 @@ button:hover {
 
     .services-article {
         flex-basis: 75%;
+
+    }
+    image-wrapper{
 
     }
 

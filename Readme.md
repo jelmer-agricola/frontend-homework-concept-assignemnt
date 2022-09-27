@@ -6,11 +6,14 @@
 
 - intro
 - projects
+- 
+- Toevoegen schuine lijn
   - text op juiste plek krijgen.
 - -services
   -  
   - contacform
     - schaduwen nalopen boxes
+      - case studies
 - footer
 
 **
